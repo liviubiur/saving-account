@@ -38,7 +38,7 @@ Now you're ready to deploy the project on your local environment.
 
 ` curl -L -X POST 'http://localhost:8085/ing-tech/users' -H 'Content-Type: application/json' -d '{"username": "test", "password": "test", "email": "test@foo.com"}'`
 
-2. You must be logged in to create a saving account. You can use the user credentials created in step one.
+2. You must be logged in to create a saving account. You can use the user credentials created in the step one.
 
 **NOTE**: The Saving Account can be created only during the working days between 09:00 - 18:00 localtime!
 The user can't have more than one Saving Account! 
