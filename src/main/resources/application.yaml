@@ -1,0 +1,12 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /ing-tech
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: pgadmin
+  main:
+    allow-bean-definition-overriding: true
