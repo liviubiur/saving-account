@@ -11,8 +11,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.ingtech.challenge.user.service.UserDetailsServiceImpl;
-
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 

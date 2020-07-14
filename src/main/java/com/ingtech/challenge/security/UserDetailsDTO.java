@@ -1,4 +1,4 @@
-package com.ingtech.challenge.user.persistence;
+package com.ingtech.challenge.security;
 
 import java.util.Arrays;
 import java.util.Collection;

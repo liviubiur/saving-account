@@ -1,11 +1,11 @@
-package com.ingtech.challenge.user.service;
+package com.ingtech.challenge.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.ingtech.challenge.user.persistence.UserDetailsDTO;
+import com.ingtech.challenge.security.UserDetailsDTO;
 import com.ingtech.challenge.user.persistence.entity.User;
 import com.ingtech.challenge.user.persistence.repository.UserRepository;
 
