@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: liviutzubiur28
+    username: [USERNAME]
+    password: [PASSWORD]
   main:
     allow-bean-definition-overriding: true
