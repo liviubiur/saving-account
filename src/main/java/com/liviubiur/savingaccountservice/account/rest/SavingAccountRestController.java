@@ -2,6 +2,7 @@ package com.liviubiur.savingaccountservice.account.rest;
 
 import com.liviubiur.savingaccountservice.account.persistence.entity.SavingAccount;
 import com.liviubiur.savingaccountservice.account.service.SavingAccountService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,7 @@ public class SavingAccountRestController implements SavingAccountRestApi {
 
   private final SavingAccountService savingAccountService;
 
+  @Autowired
   public SavingAccountRestController(
       SavingAccountService savingAccountService) {
     this.savingAccountService = savingAccountService;

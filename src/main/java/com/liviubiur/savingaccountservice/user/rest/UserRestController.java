@@ -17,9 +17,9 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RequestMapping(value = "/users", produces = APPLICATION_JSON_VALUE)
 public class UserRestController implements UserRestApi {
 
-  @Autowired
   private final UserService userService;
 
+  @Autowired
   public UserRestController(UserService userService) {
     this.userService = userService;
   }

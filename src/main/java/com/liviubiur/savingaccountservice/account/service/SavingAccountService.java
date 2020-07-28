@@ -21,11 +21,8 @@ import java.time.LocalDateTime;
 @Service
 public class SavingAccountService {
 
-  @Autowired
   private final SavingAccountRepository savingAccountRepository;
-  @Autowired
   private final UserRepository userRepository;
-  @Autowired
   private Clock clock;
 
   @Autowired
@@ -47,7 +44,7 @@ public class SavingAccountService {
     }
 
     Authentication principal = SecurityContextHolder.getContext().getAuthentication();
-    User user = userRepository.getUserByUsername(principal.getName());
+    User user = userRepository.getUserByUsername(principal.getName()).get();
 
     savingAccount.setUser(user);
 
