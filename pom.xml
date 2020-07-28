@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.liviubiur</groupId>
-	<artifactId>saving-account</artifactId>
+	<artifactId>saving-account-service</artifactId>
 	<version>1.0.0</version>
-	<name>saving-account</name>
+	<name>saving-account-service</name>
 	<description>A REST service to create a saving bank account using basic authentification.</description>
 
 	<properties>

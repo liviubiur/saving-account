@@ -1,4 +1,4 @@
-# saving-account
+# saving-account-service
 A REST service to create a saving bank account using basic authentification.
 
 ### Built With
@@ -22,15 +22,15 @@ A REST service to create a saving bank account using basic authentification.
 
 ### Clone Project
 
-`git clone https://github.com/liviubiur/saving-account.git`
+`git clone https://github.com/liviubiur/saving-account-service.git`
 
 
 ### Web API
 
 | Description             | URL          
 | ------------------------|:-------------:
-| Create an user          | /saving-account/users
-| Create a Saving Account | /saving-account/saving-accounts
+| Create an user          | /saving-account-service/users
+| Create a Saving Account | /saving-account-service/saving-accounts
 
 ### How it works
 
@@ -39,14 +39,14 @@ Now you're ready to deploy the project on your local environment.
 
 1. Register an user:
 
-` curl -L -X POST 'http://localhost:8085/saving-account/users' -H 'Content-Type: application/json' -d '{"username": "test", "password": "test", "email": "test@foo.com"}'`
+` curl -L -X POST 'http://localhost:8085/saving-account-service/users' -H 'Content-Type: application/json' -d '{"username": "test", "password": "test", "email": "test@foo.com"}'`
 
 2. You must be logged in to create a saving account. You can use the user credentials created in the step one.
 
 **NOTE**: The Saving Account can be created only during the working days between 09:00 - 18:00 localtime!
 The user can't have more than one Saving Account! 
 
-`curl --location --request POST 'http://localhost:8085/saving-account/saving-accounts' \
+`curl --location --request POST 'http://localhost:8085/saving-account-service/saving-accounts' \
 --header 'Authorization: Basic bGl2aXU6dGVzdA==' \
 --header 'Content-Type: application/json' \
 --data-raw '{"balance":2}'`

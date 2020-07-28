@@ -1,7 +1,7 @@
 server:
   port: 8085
   servlet:
-    context-path: /saving-account
+    context-path: /saving-account-service
 
 spring:
   datasource:
