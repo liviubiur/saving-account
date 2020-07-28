@@ -8,11 +8,11 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ing-tech</groupId>
-	<artifactId>challenge</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>challenge</name>
-	<description>Home assignment</description>
+	<groupId>com.liviubiur</groupId>
+	<artifactId>saving-account</artifactId>
+	<version>1.0.0</version>
+	<name>saving-account</name>
+	<description>A REST service to create a saving bank account using basic authentification.</description>
 
 	<properties>
 		<java.version>11</java.version>
