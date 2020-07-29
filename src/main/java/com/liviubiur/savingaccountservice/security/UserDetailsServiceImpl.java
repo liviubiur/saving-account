@@ -15,11 +15,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
   private UserRepository userRepository;
 
   @Override
-  public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+  public UserDetails loadUserByUsername(String username) {
     Optional<User> user = Optional.ofNullable(userRepository.getUserByUsername(username)
             .orElseThrow(() -> new UsernameNotFoundException("User not found.")));
 
-    return new UserDetailsDTO(user.get());
+    return new UserDetailsDTO(user.orElse(null));
   }
 
 }
