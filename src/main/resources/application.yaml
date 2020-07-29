@@ -9,4 +9,4 @@ spring:
     username: [USERNAME]
     password: [PASSWORD]
   main:
-    allow-bean-definition-overriding: true
+    allow-bean-definition-overriding: on
