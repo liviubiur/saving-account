@@ -1,12 +1,13 @@
 package com.liviubiur.savingaccountservice.security;
 
-import com.liviubiur.savingaccountservice.user.persistence.entity.User;
+import java.util.Collection;
+import java.util.Collections;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Arrays;
-import java.util.Collection;
+import com.liviubiur.savingaccountservice.user.persistence.entity.User;
 
 public class UserDetailsDTO implements UserDetails {
 
@@ -19,7 +20,7 @@ public class UserDetailsDTO implements UserDetails {
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
     SimpleGrantedAuthority authority = new SimpleGrantedAuthority(user.getRole());
-    return Arrays.asList(authority);
+    return Collections.singletonList(authority);
   }
 
   @Override
