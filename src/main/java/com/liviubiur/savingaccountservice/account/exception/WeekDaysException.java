@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class WeekDaysException extends RuntimeException {
 
   public WeekDaysException() {
-    super(String.format("Please return Monday to open your account."));
+    super("Please return Monday to open your account.");
   }
 
 }
