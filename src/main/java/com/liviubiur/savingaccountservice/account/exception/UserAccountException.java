@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class UserAccountException extends RuntimeException {
 
   public UserAccountException() {
-    super(String.format("The user can have only one savings account."));
+    super("The user can have only one savings account.");
   }
 }
