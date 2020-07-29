@@ -44,7 +44,7 @@ public class SavingAccountService {
     }
 
     Authentication principal = SecurityContextHolder.getContext().getAuthentication();
-    User user = userRepository.getUserByUsername(principal.getName()).get();
+    User user = userRepository.getUserByUsername(principal.getName()).orElse(null);
 
     savingAccount.setUser(user);
 
